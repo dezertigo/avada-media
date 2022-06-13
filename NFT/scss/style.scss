@@ -12,6 +12,7 @@
   }
   &__hero {
     display: flex;
+    flex-wrap: wrap;
   }
   &__title {
     font-size: 66px;
@@ -39,7 +40,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 22px 92px 22px 70px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     display: inline-block;
     width: 252px;
     height: 68px;
@@ -64,6 +65,10 @@
     -webkit-text-fill-color: transparent;
     padding: 0;
   }
+  &__brands {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .menu {
@@ -78,7 +83,10 @@
   }
   &__link {
     @extend %orbitron-700;
-    
+    transition: all 0.5s ease;
+    &:hover {
+      color: #fff;
+    }
   }
 }
 
@@ -88,9 +96,62 @@
   }
 }
 
+.header-stats {
+  display: flex;
+  &__num {
+    font-size: 40px;
+    line-height: 53px;
+    color: #fff;
+    @extend %aldrich-400;
+    position: relative;
+    &:not(:last-child) {
+      padding-right: 15px;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 64px;
+        background-color: #ffffff26;
+        top: 0;
+        right: 0;
+      }
+    }
+    span {
+      display: block;
+      font-size: 18px;
+      line-height: 22px;
+      @extend %inter-400;
+    }
+  }
+  &__num + &__num {
+    padding-left: 40px;
+  }
+}
 
 .swiper {
   max-width: 500px;
 }
+
+.card {
+  clip-path: polygon(15% 0%, 100% 0, 100% 100%, 0 100%, 0% 30%);
+  max-width: 340px;
+  width: 100%;
+  height: 180px;
+  margin-top: -110px;
+  margin-left: auto;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+  backdrop-filter: blur(60.8003px);
+  border-radius: 9px;
+  border: 4px solid #ffffff33;
+  position: relative;
+  z-index: 10;
+  position: relative;
+}
+
+// .card-img {
+//   margin-top: -115px;
+//   margin-left: auto;
+//   position: relative;
+// }
 
 @import 'media';
