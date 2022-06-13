@@ -1,1 +1,287 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.header__title {
+  font-family: 'Lato-Bold', sans-serif;
+  font-weight: 700;
+}
+
+.btn, .menu__link {
+  font-family: 'Orbitron-Bold', sans-serif;
+  font-weight: 700;
+}
+
+.header__text {
+  font-family: 'Rajdhani-Regular', sans-serif;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Aldrich-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local("Aldrich-Regular"), url("../fonts/Aldrich-Regular.woff2") format("woff2"), url("../fonts/Aldrich-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter-ExtraBold';
+  font-weight: 800;
+  font-style: normal;
+  src: local("Inter-ExtraBold"), url("../fonts/Inter-ExtraBold.woff2") format("woff2"), url("../fonts/Inter-ExtraBold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: local("Inter-Medium"), url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local("Inter-Regular"), url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local("Lato-Bold"), url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local("Lato-Regular"), url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MuseoModerno-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local("MuseoModerno-Regular"), url("../fonts/MuseoModerno-Regular.woff2") format("woff2"), url("../fonts/MuseoModerno-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Orbitron-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local("Orbitron-Bold"), url("../fonts/Orbitron-Bold.woff2") format("woff2"), url("../fonts/Orbitron-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rajdhani-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: local("Rajdhani-Bold"), url("../fonts/Rajdhani-Bold.woff2") format("woff2"), url("../fonts/Rajdhani-Bold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rajdhani-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: local("Rajdhani-Medium"), url("../fonts/Rajdhani-Medium.woff2") format("woff2"), url("../fonts/Rajdhani-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rajdhani-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local("RajdhaniRegular"), url("../fonts/Rajdhani-Regular.woff2") format("woff2"), url("../fonts/Rajdhani-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rajdhani-SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  src: local("Rajdhani-SemiBold"), url("../fonts/Rajdhani-SemiBold.woff2") format("woff2"), url("../fonts/Rajdhani-SemiBold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  font-weight: 400;
+  font-style: normal;
+  src: local("Roboto-Medium"), url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: local("Roboto-Regular"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+input,
+select,
+button,
+textarea {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background-image: url(../img/body-bg.jpg);
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.container {
+  max-width: 1430px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  font-size: 20px;
+  line-height: 25px;
+  color: #fff;
+}
+
+.header__inner {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__title {
+  font-size: 66px;
+  line-height: 91px;
+  color: #fff;
+  max-width: 850px;
+  margin-bottom: 20px;
+}
+
+.header__title span {
+  background: linear-gradient(272.38deg, #43A5E3 46.06%, #FF56F6 81.53%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header__text {
+  font-size: 27px;
+  line-height: 44px;
+  color: #fff;
+  max-width: 660px;
+  margin-bottom: 40px;
+}
+
+.header__btn--explore {
+  background-image: url("../img/btn.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 22px 92px 22px 70px;
+  margin-bottom: 30px;
+  display: inline-block;
+  width: 252px;
+  height: 68px;
+  position: relative;
+  margin-right: 38px;
+}
+
+.header__btn--explore::after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/arrow-right.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 10;
+  width: 52px;
+  height: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.header__btn--transparent {
+  background: linear-gradient(272.38deg, #43A5E3 46.06%, #FF56F6 81.53%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  line-height: 25px;
+  color: #FFFFFF99;
+}
+
+.menu__item + .menu__item {
+  margin-left: 66px;
+}
+
+.user-nav__link + .user-nav__link {
+  margin-left: 45px;
+}
+
+.swiper {
+  max-width: 500px;
+}
+/*# sourceMappingURL=style.css.map */
