@@ -35,3 +35,30 @@ body {
   @extend %orbitron-700;
   color: #fff;
 }
+
+.mobile-btn {
+  display: none;
+  @extend %orbitron-700;
+  margin: 30px auto 0;
+		text-align: center;
+		position: relative;
+		background-image: url(../img/mobile-btn.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 141px;
+		padding: 11px 45px 13px 20px;
+		position: relative;
+		font-size: 12px;
+		line-height: 15px;
+		&::after {
+			content: '';
+			position: absolute;
+			width: 25px;
+			height: 10px;
+			background-image: url(../img/arrow-medium.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			top: 40%;
+			transform: translateY(-40%);
+		}
+}

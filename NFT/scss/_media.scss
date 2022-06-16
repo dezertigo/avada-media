@@ -1,0 +1,495 @@
+@media (max-width: 1350px) {
+    .header {
+        &__img {
+          max-width: 400px;
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+	.filter {
+		&__inner {
+			flex-direction: column;
+		}
+	}
+	.subscribe {
+		&__inner {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&__img-box {
+			margin-top: 100px;
+			order: 2;
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.form {
+		text-align: center;
+		&__fieldset {
+			justify-content: center;
+		}
+	}
+}
+
+@media (max-width: 1060px) {
+    .header {
+			&__hero {
+				justify-content: center;
+			}
+			&__content {
+				max-width: 100%;
+        text-align: center;
+			}
+			&__text {
+				max-width: 100%;
+				text-align: center;
+			}
+			&-stats {
+				justify-content: center;
+			}
+			&__img {
+				order: 2;
+			}
+			&__brands {
+				flex-wrap: wrap;
+				justify-content: space-evenly;
+    		gap: 20px;
+			}
+    }
+}
+
+@media (max-width: 992px) {
+	.logo {
+		z-index: 2;
+	}
+	.card-header {
+		margin-right: auto;
+	}
+	.menu {
+		overflow-x: hidden;
+		&__btn {
+		display: block;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+		cursor: pointer;
+		}
+		&__list {
+			padding-top: 210px;
+		}
+		&__item {
+			padding-bottom: 30px;
+		}
+		&__item + &__item {
+			margin-left: 0;
+		}
+		&__link {
+			display: block;
+		}
+	}
+	.menu__list,
+	.user-nav {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		display: block;
+		text-align: center;
+		background-color: #000;
+		transform: translateY(-200%);
+		transition: all 0.5s linear;
+	}
+	.user-nav {
+		overflow-x: hidden;
+		padding-top: 100px;
+		&__link {
+			display: block;
+			margin-bottom: 30px;
+		}
+		&__link + &__link {
+			margin-left: 0;
+		}
+	}
+	.menu--active {
+		transform: translateY(0);
+	}
+	.nft {
+		&__cards {
+			justify-content: flex-start;
+			flex-wrap: nowrap;
+			overflow: hidden;
+  	  overflow-x: scroll;;
+  	  white-space:nowrap;
+			gap: 25px;
+		}
+		&-card {
+			display: inline-block;
+    	vertical-align: top;
+		}
+	}
+	.filter-category {
+		padding-right: 10px;
+		&__label {
+			max-width: 100%;
+			height: 50px;
+		}
+		&__checkbox {
+			width: 250px;
+			padding: 20px 0;
+			span {
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+	}
+	.author__cards {
+		justify-content: flex-start;
+		flex-wrap: nowrap;
+		overflow: hidden;
+		overflow-x: scroll;;
+		white-space:nowrap;
+		gap: 25px;
+	}
+	&-card {
+		display: inline-block;
+		vertical-align: top;
+	}
+	.footer {
+		padding: 40px 0;
+		&__inner {
+			padding: 40px 0;
+			flex-wrap: wrap;
+		}
+		&__info {
+			max-width: 100%;
+		}
+		&__socials {
+			margin-bottom: 50px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.header {
+		padding-bottom: 40px;
+		&__title{
+			font-size: 42px;
+			line-height: 57px;
+		}
+		&__text {
+			font-size: 14px;
+			line-height: 23px;
+		}
+	}
+	.header-stats {
+		&__num {
+			font-size: 18px;
+			line-height: 28px;
+			&:not(:last-child) {
+				padding-right: 40px;
+				&::after {
+					content: '';
+					position: absolute;
+					width: 1px;
+					height: 44px;
+					background-color: #ffffff26;
+					top: 0;
+					right: 0;
+				}
+			}
+			span {
+				font-size: 12px;
+				line-height: 12px;
+			}
+		}
+	}
+	.nft {
+		padding: 50px 0 40px;
+	}
+	.nft-card {
+		max-width:340px;
+		&__img {
+			width: 100%;
+		}
+		&__author {
+			font-size: 12px;
+			line-height: 27px;
+			max-width: 115px;
+		}
+		&__desc {
+			font-size: 9px;
+			line-height: 27px;
+			
+		}
+		&__price {
+			font-size: 9px;
+			span {
+				font-size: 9px;
+			}
+		}
+		&__timer-title {
+			font-size: 9px;
+			line-height: 27px;
+		}
+		&__timer-time {
+			justify-content: start;
+			gap: 30px;
+			
+			p {
+				font-size: 14px;
+				line-height: 27px;
+				span {
+					font-size: 9px;
+					line-height: 21px;
+				}
+			}
+		}
+	}
+	.card {
+		&__title {
+			font-size: 14px;
+			line-height: 27px;
+		}
+		&__content-desc {
+			margin-right: 20px;
+		}
+	}
+	.filter {
+		padding: 40px 0;
+	}
+	.filter-category {
+		&__img {
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.subscribe {
+		padding-top: 245px;
+	}
+	.footer {
+		&__inner {
+			justify-content: start;
+		}
+		&__list {
+			max-width: 200px;
+			width: 100%;
+			margin-bottom: 50px;
+		}
+	}
+}
+
+
+@media (max-width: 600px) {
+	.header{
+		&__content {
+			display: flex;
+			flex-direction: column;
+		}
+		&__btn {
+			margin: 0 auto 50px;
+		}
+		&__content-img {
+			max-width: 90%;
+			margin: 0 auto;
+		}
+	}
+	.card__btn {
+		padding-right: 30px;
+	}
+	.nft__btn--display {
+		display: none;
+	}
+	.title {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.mobile-btn {
+		display: block;
+	}
+	.filter {
+		&__btn {
+			font-size: 9px;
+			line-height: 11px;
+			&::after {
+				width: 25px;
+				height: 14px;
+			}
+		}
+	}
+	.filter-category {
+		&__form-col + &__form-col {
+			margin-left: 20px;
+		}
+		&__label {
+			margin-bottom: 20px;
+		}
+		&__checkbox {
+			width: 150px;
+			padding: 15px 0;
+			span {
+				font-size: 11px;
+				line-height: 14px;
+			}
+		}
+		&__img {
+			max-width: 186px;
+		}
+	}
+	.author {
+		padding: 40px 0;
+		&__inner	{
+			padding: 25px;
+		}
+		&__card {
+			max-width: 340px;
+			img {
+				max-width: 330px;
+			}
+		}
+		&__info-title {
+			font-size: 17px;
+			line-height: 32px;
+		}
+		&__info-nick {
+			font-size: 14px;
+			line-height: 32px;
+			max-width: 135px;
+			margin: 0 auto;
+		}
+		&__stats-text {
+			font-size: 22px;
+			line-height: 34px;
+			span {
+				font-size: 14px;
+			}
+		}
+	}
+	.sellers {
+		padding: 40px 0;
+		&__title {
+			font-size: 20px;
+			line-height: 24px;
+		}
+		&__text {
+			font-size: 14px;
+			line-height: 20px;
+		}
+		&__btn {
+			display: none;
+		}
+	}
+	.sellers-card {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		&__num {
+			font-size: 10px;
+			line-height: 32px;
+		}
+		&__name{
+			font-size: 14px;
+			line-height: 32px;
+		}
+		&__coins {
+			font-size: 10px;
+			line-height: 32px;
+			padding-left: 15px;
+			&::before {
+				bottom: 0;
+			}
+		}
+		&__stonks {
+			font-size: 11px;
+			line-height: 34px;
+		}
+	}
+	.nft-info {
+		padding: 40px 0;
+		background-size: cover;
+		height: 300px;
+		&__inner {
+			padding: 30px 28px 30px 40px;
+			max-width: 340px;
+			width: 100%;
+			margin-right: auto;
+			top: 80px;
+		}
+		&__title {
+			font-size: 26px;
+			line-height: 35px;
+		}
+		&__text {
+			font-size: 12px;
+			line-height: 21px;
+		}
+		&__btn {
+			font-size: 10px;
+			line-height: 16px;
+		}
+	}
+	.subscribe {
+		&__img-box {
+			img {
+			object-fit:cover;
+			width: 340px;
+			height: 380px;
+			}
+		}
+	}
+	.form {
+		max-width: 340px;
+		&__title {
+			font-size: 26px;
+			line-height: 33px;
+		}
+		&__text {
+			font-size: 13px;
+			line-height: 23px;
+			margin-bottom: 35px;
+		}
+		&__input {
+			font-size: 10px;
+			line-height: 18px;
+			padding: 10px 12px;
+		}
+		&__btn {
+			font-size: 10px;
+			line-height: 15px;
+			padding: 10px 30px;
+		}
+	}
+	.footer {
+		&__inner {
+			justify-content: center;
+			padding-bottom: 0;
+		}
+		&__list {
+			max-width: 150px;
+		}
+		&__item {
+			text-align: center;
+		}
+		&__line {
+			display: none;
+		}
+		&__desc {
+			flex-direction: column;
+		}
+		&__rights {
+			order: 2;
+			margin-top: 30px;
+			text-align: center;
+		}
+		&__desc-links {
+			display: flex;
+			justify-content: space-between;
+		}
+		&__desc-link:last-child {
+			display: none;
+		}
+	}
+}

@@ -1,11 +1,8 @@
-// const swiper = new Swiper('.swiper', {
-//   loop: true,
-//   speed: 400,
-//   slidesPerView: 1,
-//   effect: 'fade',
-//   autoplay: {
-//     delay: 3000,
-//   },
+const btnToggle = document.querySelector('.menu__btn');
+const menu = document.querySelector('.menu__list');
+const userNav = document.querySelector('.user-nav');
 
-// });
-new Swiper('.swiper');
+btnToggle.addEventListener('click', () => {
+ menu.classList.toggle('menu--active');
+ userNav.classList.toggle('menu--active');
+});

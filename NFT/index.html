@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./css/style.css">
   <title>Ocean NFT</title>
 </head>
@@ -13,7 +12,7 @@
     <div class="container">
       <div class="header__inner">
         <a href="#" class="logo">
-          <img src="./img/logo.png" alt="Ocean NFT" class="logo__img">
+          <img src="./img/header-logo.svg" alt="Ocean NFT" class="logo__img">
         </a>
         <nav class="menu">
           <ul class="menu__list">
@@ -47,7 +46,15 @@
               </svg>              
           </a>
         </div>
+        <button class="menu__btn">
+          <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21.7144 2.35237C21.7144 1.98023 21.5714 1.62333 21.3169 1.36019C21.0623 1.09705 20.7171 0.949219 20.3572 0.949219H1.35721C0.997276 0.949219 0.652081 1.09705 0.397568 1.36019C0.143053 1.62333 7.05719e-05 1.98023 7.05719e-05 2.35237C7.05719e-05 2.7245 0.143053 3.0814 0.397568 3.34454C0.652081 3.60768 0.997276 3.75551 1.35721 3.75551H20.3572C20.7171 3.75551 21.0623 3.60768 21.3169 3.34454C21.5714 3.0814 21.7144 2.7245 21.7144 2.35237Z" fill="white"/>
+            <path d="M21.7144 19.1905C21.7144 18.8184 21.5714 18.4615 21.3169 18.1983C21.0623 17.9352 20.7171 17.7874 20.3572 17.7874H1.35721C0.997276 17.7874 0.652081 17.9352 0.397568 18.1983C0.143053 18.4615 7.05719e-05 18.8184 7.05719e-05 19.1905C7.05719e-05 19.5626 0.143053 19.9195 0.397568 20.1827C0.652081 20.4458 0.997276 20.5936 1.35721 20.5936H20.3572C20.7171 20.5936 21.0623 20.4458 21.3169 20.1827C21.5714 19.9195 21.7144 19.5626 21.7144 19.1905Z" fill="white"/>
+            <path d="M20.3572 9.36768C20.7171 9.36768 21.0623 9.51551 21.3169 9.77865C21.5714 10.0418 21.7144 10.3987 21.7144 10.7708C21.7144 11.143 21.5714 11.4999 21.3169 11.763C21.0623 12.0261 20.7171 12.174 20.3572 12.174H9.50007C9.14013 12.174 8.79494 12.0261 8.54043 11.763C8.28591 11.4999 8.14293 11.143 8.14293 10.7708C8.14293 10.3987 8.28591 10.0418 8.54043 9.77865C8.79494 9.51551 9.14013 9.36768 9.50007 9.36768H20.3572Z" fill="white"/>
+            </svg>
+      </button>
       </div>
+      
       <div class="header__hero">
         <div class="header__content">
           <h1 class="header__title">
@@ -72,11 +79,11 @@
             </p>
           </div>
         </div>
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./img/slider/slide1.png" alt="#" class="slider__img">
-              <div class="card card-slider">
+        <div class="header__img">
+              <div class="header__img-main">
+                <img src="./img/header-img.png" alt="#" class="header__content-img">
+              </div>
+              <div class="card card-header">
                 <div class="card__content">
                   <div class="card__content-desc">
                     <h4 class="card__title">3D Abstract Hand</h4> 
@@ -97,14 +104,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/slider/slide2.png" alt="#" class="slider__img">
-            </div>
-            <div class="swiper-slide">
-              <img src="./img/slider/slide3.png" alt="#" class="slider__img">
-            </div>
-          </div>
         </div>
         <div class="header__brands">
           <img class="header__brand" src="./img/brands/Binance_logo.png" alt="brand 1">
@@ -115,18 +114,20 @@
       </div>
     </div>
   </header>
-  <main class="main">
+   <main class="main">
     <section class="nft">
       <div class="container">
         <div class="nft__header">
           <h2 class="title nft__title">
             Top NFT’s now
           </h2>
-          <a class="nft__btn" href="#">View all</a>
+          <a class="nft__btn nft__btn--display" href="#">View all</a>
         </div>
         <div class="nft__cards">
           <div class="nft-card">
-            <img class="nft-card__img" src="./img/cards/card-1.jpg" alt="nft-img">
+            <div class="nft-card__img-box">
+              <img class="nft-card__img" src="./img/cards/card-1.jpg" alt="nft-img">
+            </div>
             <div class="card__content card nft-card__text">
               <div class="card__content-desc">
                 <h4 class="card__title nft-card__title">Apollo Eth #1289 NFT</h4> 
@@ -148,7 +149,9 @@
             </div>
           </div>
           <div class="nft-card">
-            <img class="nft-card__img" src="./img/cards/card-2.jpg" alt="nft-img">
+            <div class="nft-card__img-box">
+              <img class="nft-card__img" src="./img/cards/card-2.jpg" alt="nft-img">
+            </div>
             <div class="card__content card nft-card__text">
               <div class="card__content-desc nft-card__content-desc">
                 <h4 class="card__title nft-card__title">Sassy Bull #1169 Art</h4> 
@@ -170,7 +173,9 @@
             </div>
           </div>
           <div class="nft-card">
-            <img class="nft-card__img" src="./img/cards/card-3.jpg" alt="nft-img">
+            <div class="nft-card__img-box">
+              <img class="nft-card__img" src="./img/cards/card-3.jpg" alt="nft-img">
+            </div>
             <div class="card__content card nft-card__text">
               <div class="card__content-desc">
                 <h4 class="card__title nft-card__title">Satisfying 3D Art</h4> 
@@ -192,8 +197,12 @@
             </div>
           </div>
         </div>
+        <a class="mobile-btn" href="#">
+          Explore
+        </a>
       </div>
     </section>
+    
     <section class="filter">
       <div class="container">
         <div class="filter__inner">
@@ -202,7 +211,8 @@
               Explore Collections
             </h2>
             <form class="filter-category__form" action="#">
-              <label class="filter-category__label">
+              <div class="filter-category__form-col">
+                <label class="filter-category__label">
                   <input class="filter-category__input" type="checkbox">
                   <div class="filter-category__checkbox">
                       <span>Photography</span>
@@ -226,7 +236,9 @@
                       <span>Collectibles</span>
                   </div>
               </label>
-              <label class="filter-category__label">
+              </div>
+              <div class="filter-category__form-col">
+                <label class="filter-category__label">
                   <input class="filter-category__input" type="checkbox" checked>
                   <div class="filter-category__checkbox">
                       <span>Art</span>
@@ -250,12 +262,15 @@
                     <span>Collectibles</span>
                 </div>
               </label>
+              </div>
             </form>
             <a class="nft__btn filter__btn" href="#">
               View all
             </a>
           </div>
-        <img class="filter__img" src="./img/nft-img.png" alt="nft-img">
+          <div class="filter-category__img">
+            <img class="filter__img" src="./img/nft-img.png" alt="nft-img">
+          </div>
         </div>
       </div>
     </section>
@@ -263,7 +278,7 @@
       <div class="container">
         <div class="nft__header">
           <h2 class="title">Explore Collections</h2>
-          <a class="nft__btn" href="#">View all</a>
+          <a class="nft__btn nft__btn--display" href="#">View all</a>
         </div>
         <div class="author__cards">
           <div class="card author__card">
@@ -339,8 +354,12 @@
             </div>
           </div>
         </div>
+        <a class="mobile-btn" href="#">
+          Explore
+        </a>
       </div>
     </section>
+    
     <section class="sellers">
       <div class="container">
         <h3 class="sellers__title">
@@ -563,6 +582,9 @@
         <div class="sellers__btn author__btn card__btn card__border-gradient">
           Explore all
         </div>
+        <a class="mobile-btn" href="#">
+          Explore
+        </a>
       </div>
     </section>
     <section class="nft-info">
@@ -580,7 +602,9 @@
     <section class="subscribe">
       <div class="container">
         <div class="subscribe__inner">
-          <img class="subscribe__img" src="./img/subs-img.png" alt="subscribe-img">
+          <div class="subscribe__img-box">
+            <img class="subscribe__img" src="./img/subs-img.png" alt="subscribe-img">
+          </div>
           <form class="form" action="#">
             <h2 class="form__title">Subscribe to us</h2> 
             <p class="form__text">
@@ -595,12 +619,147 @@
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <div class="container">
-
+      <div class="line"></div>
+      <div class="footer__inner">
+        <div class="footer__info">
+          <a href="#" class="logo footer__logo">
+            <img src="./img/logo.svg" alt="logo" class="logo__img footer__logo-img">
+            <p class="footer__text">
+              Lorem ipsum dolor amet, consectetur adipiscing elit. Eget nisl nunc quam ac sed turpis volutpat. Cursus sed massa non nisi, placerat.
+            </p>
+            <div class="footer__socials">
+              <a href="#" class="footer__social-link">
+                <img src="./img/socials/inst.svg" alt="instagram" class="footer__social-img">
+              </a>
+              <a href="#" class="footer__social-link">
+                <img src="./img/socials/ball.svg" alt="ball" class="footer__social-img">
+              </a>
+              <a href="#" class="footer__social-link">
+                <img src="./img/socials/twitter.svg" alt="twitter" class="footer__social-img">
+              </a>
+              <a href="#" class="footer__social-link">
+                <img src="./img/socials/youtube.svg" alt="youtube" class="footer__social-img">
+              </a>
+            </div>
+          </a>
+        </div>
+         <ul class="footer__list">
+          <li class="footer__item">
+            Market place  
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Overview</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Features <span>new</span></a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Tutorials</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Pricing</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Releases</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__item">
+            Collectibles
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">About</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Press</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Careers</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Contact</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Partners</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__item">
+            Support
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Help Center</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Safety Center</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Legal</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Privacy policy</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Status</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__item">
+            Legal
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Cookies Policy</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Privacy Policy</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Terms of Service</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Law Enforcement</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Status</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__item">
+            Follow us
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Facebook</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Twitter</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Dribble</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">Instagram</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+      <div class="line footer__line"></div> 
+      <div class="footer__desc">
+        <p class="footer__rights">
+          &COPY; 2020 Landify UI Kit. All rights reserved
+        </p>
+        <div class="footer__desc-links">
+          <a href="#" class="footer__desc-link">Terms & Conditions</a>
+          <a href="#" class="footer__desc-link">Privacy Policy</a>
+          <a href="#" class="footer__desc-link">Sitemap</a>
+        </div>
+      </div>
     </div>
   </footer>
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>
