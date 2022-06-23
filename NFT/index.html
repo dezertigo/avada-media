@@ -12,7 +12,7 @@
     <div class="container">
       <div class="header__inner">
         <a href="#" class="logo">
-          <img src="./img/header-logo.svg" alt="Ocean NFT" class="logo__img">
+          <img src="./img/logo.svg" alt="Ocean NFT" class="logo__img">
         </a>
         <nav class="menu">
           <ul class="menu__list">
@@ -63,10 +63,14 @@
           <p class="header__text">
             The world’s first and largest digital marketplace for crypto collectibles and non- fungible tokens (NFTs). 
           </p>
-          <a href="#" class="header__btn btn header__btn--explore">
-            Explore
-          </a>
-          <a href="#" class="header__btn btn header__btn--transparent">Create NFT’s</a>
+          <div class="header__btns">
+            <a href="#" class="header__btn btn header__btn--explore">
+              Explore
+            </a>
+            <a href="#" class="header__btn btn header__btn--transparent">
+              Create NFT’s
+            </a>
+          </div>
           <div class="header-stats">
             <p class="header-stats__num">
               35m+ <span>Artwork</span>
@@ -79,11 +83,12 @@
             </p>
           </div>
         </div>
-        <div class="header__img">
-              <div class="header__img-main">
-                <img src="./img/header-img.png" alt="#" class="header__content-img">
+        <div class="header__img-box">
+              <div class="header__img">
+                <img class="header__content-img" src="./img/header-img.png" alt="#">
+                <img class="header__mobile-img" src="./img/mobile-header-img.png" alt="#">
               </div>
-              <div class="card card-header">
+              <div class="card-header">
                 <div class="card__content">
                   <div class="card__content-desc">
                     <h4 class="card__title">3D Abstract Hand</h4> 
@@ -106,10 +111,18 @@
               </div>
         </div>
         <div class="header__brands">
-          <img class="header__brand" src="./img/brands/Binance_logo.png" alt="brand 1">
-          <img class="header__brand" src="./img/brands/Ethereum logo.png" alt="brand 2">
-          <img class="header__brand" src="./img/brands/Logo_of_Blockchain.io.png" alt="brand 3">
-          <img class="header__brand" src="./img/brands/bitmex.png" alt="brand 4">
+          <div class="header__brand">
+            <img class="header__brand-img header__brand-img--1" src="./img/brands/Binance_logo.svg" alt="brand 1">
+          </div>
+          <div class="header__brand">
+            <img class="header__brand-img header__brand-img--2" src="./img/brands/Ethereum logo.svg" alt="brand 2">
+          </div>
+          <div class="header__brand">
+            <img class="header__brand-img header__brand-img--3" src="./img/brands/Logo_of_Blockchain.io.svg" alt="brand 3">
+          </div>
+          <div class="header__brand">
+            <img class="header__brand-img header__brand-img--4" src="./img/brands/bitmex.svg" alt="brand 4">
+          </div>
         </div>
       </div>
     </div>
@@ -202,78 +215,48 @@
         </a>
       </div>
     </section>
-    
-    <section class="filter">
+    <section class="collection">
       <div class="container">
-        <div class="filter__inner">
-          <div class="filter-category">
-            <h2 class="title filter__title">
-              Explore Collections
-            </h2>
-            <form class="filter-category__form" action="#">
-              <div class="filter-category__form-col">
-                <label class="filter-category__label">
-                  <input class="filter-category__input" type="checkbox">
-                  <div class="filter-category__checkbox">
-                      <span>Photography</span>
-                  </div>
-              </label>
-              <label class="filter-category__label">
-                  <input class="filter-category__input" type="checkbox">
-                  <div class="filter-category__checkbox">
-                      <span>Sports</span>
-                  </div>
-              </label>
-              <label class="filter-category__label">
-                  <input class="filter-category__input" type="checkbox">
-                  <div class="filter-category__checkbox">
-                      <span>Brands</span>
-                  </div>
-              </label>
-              <label class="filter-category__label">
-                  <input class="filter-category__input" type="checkbox">
-                  <div class="filter-category__checkbox">
-                      <span>Collectibles</span>
-                  </div>
-              </label>
-              </div>
-              <div class="filter-category__form-col">
-                <label class="filter-category__label">
-                  <input class="filter-category__input" type="checkbox" checked>
-                  <div class="filter-category__checkbox">
-                      <span>Art</span>
-                  </div>
-              </label>
-              <label class="filter-category__label">
-                  <input class="filter-category__input" type="checkbox">
-                  <div class="filter-category__checkbox">
-                      <span>Utility</span>
-                  </div>
-              </label>
-              <label class="filter-category__label">
-                <input class="filter-category__input" type="checkbox">
-                <div class="filter-category__checkbox">
-                    <span>Brands</span>
-                </div>
-              </label>
-              <label class="filter-category__label">
-                <input class="filter-category__input" type="checkbox">
-               <div class="filter-category__checkbox">
-                    <span>Collectibles</span>
-                </div>
-              </label>
-              </div>
-            </form>
-            <a class="nft__btn filter__btn" href="#">
+        <div class="collection__inner">
+          <div class="collection__content">
+            <h2 class="title collection__title"> Explore Collections</h2>
+            <div class="collection__btns">
+              <a class="collection__btn" href="#">
+                Photography
+              </a>
+              <a class="collection__btn" href="#">
+                Sports
+              </a>
+              <a class="collection__btn" href="#">
+                Brands
+              </a>
+              <a class="collection__btn" href="#">
+                Collectibles
+              </a>
+              <a class="collection__btn" href="#">
+                Art
+              </a>
+              <a class="collection__btn" href="#">
+                Utility
+              </a>
+              <a class="collection__btn" href="#">
+                Brands
+              </a>
+              <a class="collection__btn" href="#">
+                Collectibles
+              </a>
+            </div>
+            <a class="collection__link nft__btn" href="#">
               View all
             </a>
           </div>
-          <div class="filter-category__img">
-            <img class="filter__img" src="./img/nft-img.png" alt="nft-img">
+          <div class="collection__img-box">
+            <img class="collection__img" src="./img/nft-img.png" alt="nft img">
           </div>
         </div>
       </div>
     </section>
+
     <section class="author">
       <div class="container">
         <div class="nft__header">
@@ -374,215 +357,215 @@
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim minim mollit.
         </p>
         <div class="sellers__inner">
-          <div class="card sellers-card">
-            <span class="sellers-card__num">1</span>
-            <div class="sellers-card__box">
-              <img class="sellers-card__img" src="./img/avatars/avatar-1.png" alt="avatar img">
-              <div class="sellers-card__box-content">
-                <p class="sellers-card__name">
-                  Eleanor Pena
-                </p>
-                <span class="sellers-card__coins">
-                  74875
-                </span>
+            <div class="card sellers-card">
+              <span class="sellers-card__num">1</span>
+              <div class="sellers-card__box">
+                <img class="sellers-card__img" src="./img/avatars/avatar-1.png" alt="avatar img">
+                <div class="sellers-card__box-content">
+                  <p class="sellers-card__name">
+                    Eleanor Pena
+                  </p>
+                  <span class="sellers-card__coins">
+                    74875
+                  </span>
+                </div>
               </div>
+              <span class="sellers__stonks">
+                +468.48%
+              </span>
             </div>
-            <span class="sellers__stonks">
-              +468.48%
-            </span>
-          </div>
-          <div class="card sellers-card">
-            <span class="sellers-card__num">2</span>
-            <div class="sellers-card__box">
-              <img class="sellers-card__img" src="./img/avatars/avatar-2.png" alt="avatar img">
-              <div class="sellers-card__box-content">
-                <p class="sellers-card__name">
-                  Savannah Nguyen
-                </p>
-                <span class="sellers-card__coins">
-                  18599
-                </span>
+            <div class="card sellers-card">
+              <span class="sellers-card__num">2</span>
+              <div class="sellers-card__box">
+                <img class="sellers-card__img" src="./img/avatars/avatar-2.png" alt="avatar img">
+                <div class="sellers-card__box-content">
+                  <p class="sellers-card__name">
+                    Savannah Nguyen
+                  </p>
+                  <span class="sellers-card__coins">
+                    18599
+                  </span>
+                </div>
               </div>
+              <span class="sellers__stonks">
+                +468.48%
+              </span>
             </div>
-            <span class="sellers__stonks">
-              +468.48%
-            </span>
-          </div>
-          <div class="card sellers-card">
-            <span class="sellers-card__num">3</span>
-            <div class="sellers-card__box">
-              <img class="sellers-card__img" src="./img/avatars/avatar-3.png" alt="avatar img">
-              <div class="sellers-card__box-content">
-                <p class="sellers-card__name">
-                  Arlene McCoy
-                </p>
-                <span class="sellers-card__coins">
-                  45904
-                </span>
+            <div class="card sellers-card">
+              <span class="sellers-card__num">3</span>
+              <div class="sellers-card__box">
+                <img class="sellers-card__img" src="./img/avatars/avatar-3.png" alt="avatar img">
+                <div class="sellers-card__box-content">
+                  <p class="sellers-card__name">
+                    Arlene McCoy
+                  </p>
+                  <span class="sellers-card__coins">
+                    45904
+                  </span>
+                </div>
               </div>
+              <span class="sellers__stonks">
+                +468.48%
+              </span>
             </div>
-            <span class="sellers__stonks">
-              +468.48%
-            </span>
-          </div>
-          <div class="card sellers-card">
-            <span class="sellers-card__num">4</span>
-            <div class="sellers-card__box">
-              <img class="sellers-card__img" src="./img/avatars/avatar-4.png" alt="avatar img">
-              <div class="sellers-card__box-content">
-                <p class="sellers-card__name">
-                  Esther Howard
-                </p>
-                <span class="sellers-card__coins">
-                  16627
-                </span>
+            <div class="card sellers-card">
+              <span class="sellers-card__num">4</span>
+              <div class="sellers-card__box">
+                <img class="sellers-card__img" src="./img/avatars/avatar-4.png" alt="avatar img">
+                <div class="sellers-card__box-content">
+                  <p class="sellers-card__name">
+                    Esther Howard
+                  </p>
+                  <span class="sellers-card__coins">
+                    16627
+                  </span>
+                </div>
               </div>
+              <span class="sellers__stonks sellers__stonks--red">
+                +468.48%
+              </span>
             </div>
-            <span class="sellers__stonks sellers__stonks--red">
-              +468.48%
-            </span>
-          </div>
-          <div class="card sellers-card">
-            <span class="sellers-card__num">5</span>
-            <div class="sellers-card__box">
-              <img class="sellers-card__img" src="./img/avatars/avatar-5.png" alt="avatar img">
-              <div class="sellers-card__box-content">
-                <p class="sellers-card__name">
-                  Robert Fox
-                </p>
-                <span class="sellers-card__coins">
-                  9631
-                </span>
+            <div class="card sellers-card">
+              <span class="sellers-card__num">5</span>
+              <div class="sellers-card__box">
+                <img class="sellers-card__img" src="./img/avatars/avatar-5.png" alt="avatar img">
+                <div class="sellers-card__box-content">
+                  <p class="sellers-card__name">
+                    Robert Fox
+                  </p>
+                  <span class="sellers-card__coins">
+                    9631
+                  </span>
+                </div>
               </div>
+              <span class="sellers__stonks">
+                +468.48%
+              </span>
             </div>
-            <span class="sellers__stonks">
-              +468.48%
-            </span>
-          </div>
-          <div class="card sellers-card">
-            <span class="sellers-card__num">6</span>
-            <div class="sellers-card__box">
-              <img class="sellers-card__img" src="./img/avatars/avatar-6.png" alt="avatar img">
-              <div class="sellers-card__box-content">
-                <p class="sellers-card__name">
-                  Darlene Robertson
-                </p>
-                <span class="sellers-card__coins">
-                  70443
-                </span>
+            <div class="card sellers-card">
+              <span class="sellers-card__num">6</span>
+              <div class="sellers-card__box">
+                <img class="sellers-card__img" src="./img/avatars/avatar-6.png" alt="avatar img">
+                <div class="sellers-card__box-content">
+                  <p class="sellers-card__name">
+                    Darlene Robertson
+                  </p>
+                  <span class="sellers-card__coins">
+                    70443
+                  </span>
+                </div>
               </div>
+              <span class="sellers__stonks">
+                +468.48%
+              </span>
             </div>
-            <span class="sellers__stonks">
-              +468.48%
-            </span>
-          </div>
-          <div class="card sellers-card">
-            <span class="sellers-card__num">7</span>
-            <div class="sellers-card__box">
-              <img class="sellers-card__img" src="./img/avatars/avatar-7.png" alt="avatar img">
-              <div class="sellers-card__box-content">
-                <p class="sellers-card__name">
-                  Jacob Jones
-                </p>
-                <span class="sellers-card__coins">
-                  13671
-                </span>
+            <div class="card sellers-card">
+              <span class="sellers-card__num">7</span>
+              <div class="sellers-card__box">
+                <img class="sellers-card__img" src="./img/avatars/avatar-7.png" alt="avatar img">
+                <div class="sellers-card__box-content">
+                  <p class="sellers-card__name">
+                    Jacob Jones
+                  </p>
+                  <span class="sellers-card__coins">
+                    13671
+                  </span>
+                </div>
               </div>
+              <span class="sellers__stonks">
+                +468.48%
+              </span>
             </div>
-            <span class="sellers__stonks">
-              +468.48%
-            </span>
-          </div>
-          <div class="card sellers-card">
-            <span class="sellers-card__num">8</span>
-            <div class="sellers-card__box">
-              <img class="sellers-card__img" src="./img/avatars/avatar-8.png" alt="avatar img">
-              <div class="sellers-card__box-content">
-                <p class="sellers-card__name">
-                  Jerome Bell
-                </p>
-                <span class="sellers-card__coins">
-                  39235
-                </span>
+            <div class="card sellers-card">
+              <span class="sellers-card__num">8</span>
+              <div class="sellers-card__box">
+                <img class="sellers-card__img" src="./img/avatars/avatar-8.png" alt="avatar img">
+                <div class="sellers-card__box-content">
+                  <p class="sellers-card__name">
+                    Jerome Bell
+                  </p>
+                  <span class="sellers-card__coins">
+                    39235
+                  </span>
+                </div>
               </div>
+              <span class="sellers__stonks sellers__stonks--red">
+                +468.48%
+              </span>
             </div>
-            <span class="sellers__stonks sellers__stonks--red">
-              +468.48%
-            </span>
-          </div>
-          <div class="card sellers-card">
-            <span class="sellers-card__num">9</span>
-            <div class="sellers-card__box">
-              <img class="sellers-card__img" src="./img/avatars/avatar-9.png" alt="avatar img">
-              <div class="sellers-card__box-content">
-                <p class="sellers-card__name">
-                  Wade Warren
-                </p>
-                <span class="sellers-card__coins">
-                  43359
-                </span>
+            <div class="card sellers-card">
+              <span class="sellers-card__num">9</span>
+              <div class="sellers-card__box">
+                <img class="sellers-card__img" src="./img/avatars/avatar-9.png" alt="avatar img">
+                <div class="sellers-card__box-content">
+                  <p class="sellers-card__name">
+                    Wade Warren
+                  </p>
+                  <span class="sellers-card__coins">
+                    43359
+                  </span>
+                </div>
               </div>
+              <span class="sellers__stonks sellers__stonks--red">
+                +468.48%
+              </span>
             </div>
-            <span class="sellers__stonks sellers__stonks--red">
-              +468.48%
-            </span>
-          </div>
-          <div class="card sellers-card">
-            <span class="sellers-card__num">10</span>
-            <div class="sellers-card__box">
-              <img class="sellers-card__img" src="./img/avatars/avatar-10.png" alt="avatar img">
-              <div class="sellers-card__box-content">
-                <p class="sellers-card__name">
-                  Jane Cooper
-                </p>
-                <span class="sellers-card__coins">
-                  95554
-                </span>
+            <div class="card sellers-card">
+              <span class="sellers-card__num">10</span>
+              <div class="sellers-card__box">
+                <img class="sellers-card__img" src="./img/avatars/avatar-10.png" alt="avatar img">
+                <div class="sellers-card__box-content">
+                  <p class="sellers-card__name">
+                    Jane Cooper
+                  </p>
+                  <span class="sellers-card__coins">
+                    95554
+                  </span>
+                </div>
               </div>
+              <span class="sellers__stonks sellers__stonks--red">
+                +468.48%
+              </span>
             </div>
-            <span class="sellers__stonks sellers__stonks--red">
-              +468.48%
-            </span>
-          </div>
-          <div class="card sellers-card">
-            <span class="sellers-card__num">11</span>
-            <div class="sellers-card__box">
-              <img class="sellers-card__img" src="./img/avatars/avatar-11.png" alt="avatar img">
-              <div class="sellers-card__box-content">
-                <p class="sellers-card__name">
-                  Kristin Watson
-                </p>
-                <span class="sellers-card__coins">
-                  20796
-                </span>
+            <div class="card sellers-card">
+              <span class="sellers-card__num">11</span>
+              <div class="sellers-card__box">
+                <img class="sellers-card__img" src="./img/avatars/avatar-11.png" alt="avatar img">
+                <div class="sellers-card__box-content">
+                  <p class="sellers-card__name">
+                    Kristin Watson
+                  </p>
+                  <span class="sellers-card__coins">
+                    20796
+                  </span>
+                </div>
               </div>
+              <span class="sellers__stonks ">
+                +468.48%
+              </span>
             </div>
-            <span class="sellers__stonks ">
-              +468.48%
-            </span>
-          </div>
-          <div class="card sellers-card">
-            <span class="sellers-card__num">12</span>
-            <div class="sellers-card__box">
-              <img class="sellers-card__img" src="./img/avatars/avatar-12.png" alt="avatar img">
-              <div class="sellers-card__box-content">
-                <p class="sellers-card__name">
-                  Kathryn Murphy
-                </p>
-                <span class="sellers-card__coins">
-                  4339
-                </span>
+            <div class="card sellers-card">
+              <span class="sellers-card__num">12</span>
+              <div class="sellers-card__box">
+                <img class="sellers-card__img" src="./img/avatars/avatar-12.png" alt="avatar img">
+                <div class="sellers-card__box-content">
+                  <p class="sellers-card__name">
+                    Kathryn Murphy
+                  </p>
+                  <span class="sellers-card__coins">
+                    4339
+                  </span>
+                </div>
               </div>
+              <span class="sellers__stonks sellers__stonks--red">
+                +468.48%
+              </span>
             </div>
-            <span class="sellers__stonks sellers__stonks--red">
-              +468.48%
-            </span>
-          </div>
         </div>
         <div class="sellers__btn author__btn card__btn card__border-gradient">
           Explore all
         </div>
-        <a class="mobile-btn" href="#">
+        <a class="mobile-btn sellers-btn" href="#">
           Explore
         </a>
       </div>
@@ -620,7 +603,7 @@
     </section>
   </main>
 
-  <footer class="footer">
+ <footer class="footer">
     <div class="container">
       <div class="line"></div>
       <div class="footer__inner">
@@ -646,106 +629,123 @@
             </div>
           </a>
         </div>
-         <ul class="footer__list">
-          <li class="footer__item">
-            Market place  
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Overview</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Features <span>new</span></a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Tutorials</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Pricing</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Releases</a>
-          </li>
-        </ul>
-        <ul class="footer__list">
-          <li class="footer__item">
-            Collectibles
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">About</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Press</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Careers</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Contact</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Partners</a>
-          </li>
-        </ul>
-        <ul class="footer__list">
-          <li class="footer__item">
-            Support
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Help Center</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Safety Center</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Legal</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Privacy policy</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Status</a>
-          </li>
-        </ul>
-        <ul class="footer__list">
-          <li class="footer__item">
-            Legal
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Cookies Policy</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Privacy Policy</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Terms of Service</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Law Enforcement</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Status</a>
-          </li>
-        </ul>
-        <ul class="footer__list">
-          <li class="footer__item">
-            Follow us
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Facebook</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Twitter</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Dribble</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">Instagram</a>
-          </li>
-          <li class="footer__item">
-            <a href="#" class="footer__link">LinkedIn</a>
-          </li>
-        </ul>
+         <div class="footer__cols">
+          <div class="footer__col">
+            <div class="footer__header">
+              <h3 class="footer__title">Market place</h3>
+              <img class="footer-img" src="./img/accordion-icon.svg">
+            </div>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Overview</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Features <span>new</span></a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Tutorials</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Pricing</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Releases</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <div class="footer__header">
+              <h3 class="footer__title">Collectibles</h3>
+              <img class="footer-img" src="./img/accordion-icon.svg">
+            </div>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">About</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Press</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Careers</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Partners</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <div class="footer__header">
+              <h3 class="footer__title">Support</h3>
+              <img class="footer-img" src="./img/accordion-icon.svg">
+            </div>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Help Center</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Safety Center</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Legal</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Status</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <div class="footer__header">
+              <h3 class="footer__title">Legal</h3>
+              <img class="footer-img" src="./img/accordion-icon.svg">
+            </div>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Cookies Policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy Policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms of Service</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Law Enforcement</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Status</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <div class="footer__header">
+              <h3 class="footer__title">Follow us</h3>
+              <img class="footer-img" src="./img/accordion-icon.svg">
+            </div>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Facebook</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Twitter</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Dribble</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Instagram</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+         </div>
       </div>
       <div class="line footer__line"></div> 
       <div class="footer__desc">
@@ -759,14 +759,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> 
   <script src="./js/main.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
